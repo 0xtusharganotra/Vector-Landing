@@ -283,14 +283,24 @@ const HeroSection: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="w-full sm:w-auto px-8 py-4 bg-white text-slate-950 rounded-lg font-bold text-lg hover:bg-slate-200 transition-colors flex items-center justify-center space-x-2">
+              <a
+                href="https://vector-think.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-4 bg-white text-slate-950 rounded-lg font-bold text-lg hover:bg-slate-200 transition-colors flex items-center justify-center space-x-2"
+              >
                 <span>Get Started</span>
                 <ArrowRight size={20} />
-              </button>
-              <button className="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white border border-slate-700 rounded-lg font-bold text-lg hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2">
+              </a>
+              <a
+                href="https://github.com/0xtusharganotra/VectorThink"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white border border-slate-700 rounded-lg font-bold text-lg hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2"
+              >
                 <Github size={20} />
                 <span>GitHub</span>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -644,12 +654,20 @@ const CTASection: React.FC = () => {
           Build persistent chat, smart AI agents, and more.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="px-8 py-3 bg-white text-slate-950 font-bold rounded-lg hover:bg-slate-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+          <button
+            onClick={() => alert("Coming Soon...")}
+            className="px-8 py-3 bg-white text-slate-950 font-bold rounded-lg hover:bg-slate-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.4)]"
+          >
             Get API Access
           </button>
-          <button className="px-8 py-3 bg-transparent border border-slate-700 text-white font-medium rounded-lg hover:bg-slate-800 transition-colors">
+          <a
+            href="https://github.com/0xtusharganotra/VectorThink"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-transparent border border-slate-700 text-white font-medium rounded-lg hover:bg-slate-800 transition-colors"
+          >
             View on GitHub
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -677,19 +695,7 @@ const FooterSection: React.FC = () => {
 
           <div className="flex space-x-6">
             <a
-              href="#"
-              className="text-slate-500 hover:text-white transition-colors"
-            >
-              <Github size={20} />
-            </a>
-            <a
-              href="#"
-              className="text-slate-500 hover:text-white transition-colors"
-            >
-              <Twitter size={20} />
-            </a>
-            <a
-              href="#"
+              href="https://www.linkedin.com/in/tusharganotra/"
               className="text-slate-500 hover:text-white transition-colors"
             >
               <Linkedin size={20} />
