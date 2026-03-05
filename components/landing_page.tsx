@@ -1404,6 +1404,8 @@ const StatsSection: React.FC = () => {
    ============================================================================= */
 
 const HowItWorksSection: React.FC = () => {
+  const [activeStep, setActiveStep] = useState<number | null>(null);
+
   const steps = [
     {
       step: "01",
@@ -1811,6 +1813,19 @@ const Footer: React.FC = () => {
               <Globe size={14} className="text-blue-400" />
               <span>Global Infrastructure</span>
             </span>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
+          <div className="flex items-center gap-4">
+            <span>Built with Vector DB + LLM</span>
+            <span>•</span>
+            <span>RAG Architecture</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 bg-green-500/50 rounded-full animate-pulse"></span>
+            <span>All systems operational</span>
           </div>
         </div>
       </div>
